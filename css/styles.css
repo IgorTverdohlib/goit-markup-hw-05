@@ -887,8 +887,9 @@ box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 
             transform: translate(-50%, -50%);
             fill: #2e2f42;
             transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-       
 }
+
+
 
  .form-send{
     width: 169px;
@@ -930,6 +931,17 @@ box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 
         cursor: pointer;
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
+.form-close:hover .modal-icon-close,
+.form-close:focus .modal-icon-close {
+    fill: #ffffff;
+}
+
+ .form-close:hover,
+ .form-close:focus{
+    background-color: #404bbf;
+        border: none;
+ }
+
 
  .modal-text{
         border: 1px solid rgba(46, 47, 66, 0.4);
@@ -949,10 +961,59 @@ box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 
         font-size: 12px;
     
         line-height: 14px; 
-        line-height: 1.16667;
+        line-height: 1.17;
         letter-spacing: 0.04em;
-        color: rgba(46, 47, 66, 0.4);
+        color: rgba(46, 47, 66, 0.4);}
+
+ .checbox{
+    margin-bottom: 24px;
+ }
       
+ 
+ .check-text{
+    font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+    
+        line-height: 14px; 
+        line-height: 1.17;
+        letter-spacing: 0.04em;
+        color: #8e8f99;
+        display: flex;
+        align-items: center;
+
+       
+ }
+
+ .polisy-link{
+    line-height: 16px;
+        line-height: 1.33;
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+        color: #4d5ae5;
+        padding-left: 2px;
+ }
+
+ .policy-checkbox-icon{
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+        border: 1px solid rgba(46, 47, 66, 0.4);
+        display: inline-block;
+        margin-right: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        fill: transparent;
+ }
+
+ .visually-hidden:checked +.check-text .policy-checkbox-icon{
+    background-color: #404BBF;
+    
+ }
+
+ .icon-check{
+
  }
 
 
